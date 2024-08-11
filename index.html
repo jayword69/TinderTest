@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test MBTI con Escala Likert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="intro" class="card">
+            <h1>Test MBTI</h1>
+            <p>Este test consiste en 80 preguntas basadas en el MBTI y utiliza la escala de Likert. Selecciona la opción que más te identifique en cada pregunta.</p>
+            <button id="start">Comenzar Test</button>
+        </div>
+        <div id="question" class="card hidden" aria-live="polite">
+            <h2 id="questionText"></h2>
+            <div class="likert" role="radiogroup">
+                <button value="1" aria-label="Totalmente en desacuerdo">1</button>
+                <button value="2" aria-label="En desacuerdo">2</button>
+                <button value="3" aria-label="Neutral">3</button>
+                <button value="4" aria-label="De acuerdo">4</button>
+                <button value="5" aria-label="Totalmente de acuerdo">5</button>
+            </div>
+        </div>
+        <div id="result" class="card hidden" aria-live="polite">
+            <h2>Tu resultado es:</h2>
+            <p id="mbtiResult"></p>
+            <p id="mbtiDescription"></p>
+            <div id="dimensionScores"></div>
+            <button id="restart">Reiniciar Test</button>
+            <button id="download">Descargar informe</button>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
