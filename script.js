@@ -1,3 +1,9 @@
+const downloadButton = document.getElementById('download');
+
+downloadButton.addEventListener('click', function() {
+    window.location.href = 'https://drive.google.com/uc?export=download&id=14zC6seL3BW1A6ZDopaWKGwo3cQqWAs3a';
+});
+
 const questions = [
     "Me siento cómodo/a en situaciones sociales.",
     "Prefiero planificar con anticipación en lugar de improvisar.",
@@ -219,8 +225,3 @@ function restartTest() {
     introCard.classList.remove('hidden');
     progressBar.style.width = '0%';
 }
-const downloadButton = document.getElementById('download');
-
-downloadButton.addEventListener('click', function() {
-    window.location.href = 'https://drive.google.com/uc?export=download&id=14zC6seL3BW1A6ZDopaWKGwo3cQqWAs3a';
-});
